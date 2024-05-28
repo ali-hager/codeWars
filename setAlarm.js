@@ -8,8 +8,12 @@
 // false    | true     => false
 // false    | false    => false
 
+// function setAlarm(employed, vacation){
+//   return employed == true && vacation == false ? true : false;
+// }
+
 function setAlarm(employed, vacation){
-  return employed == true && vacation == false ? true : false;
+  return employed && !vacation;
 }
 
 // const setAlarm = (employed, vacation) => employed && !vacation;
@@ -19,6 +23,6 @@ function setAlarm(employed, vacation){
 // }
 
 const employed = true;
-const vacation = true;
+const vacation = false;
 const result = setAlarm(employed, vacation);
 console.log(result);
